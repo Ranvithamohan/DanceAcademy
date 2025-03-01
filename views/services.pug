@@ -1,0 +1,42 @@
+extends base.pug
+block scripts
+  script(src='/static/index.js')
+block style 
+    style
+      include ../static/style.css
+      include ../static/otherstyle.css
+block content
+    header#introsection 
+        | Our Services
+    
+    section#serviceslist
+        h3 What We Offer
+        div.maincard
+            div.card
+                h4 Private Dance Lessons
+                div.cardbox 
+                    div.cardimg 
+                        img(src="/static/img/privatelesson.webp", alt="Private Lessons")
+                    div.cardcontent 
+                        p One-on-one coaching to refine your skills at your pace.
+            div.card
+                h4 Group Dance Classes
+                div.cardbox 
+                    div.cardimg 
+                        img(src="/static/img/groupclass.webp", alt="Group Classes")
+                    div.cardcontent 
+                        p Interactive sessions with peers to enhance learning.
+            div.card
+                h4 Wedding Choreography
+                div.cardbox 
+                    div.cardimg 
+                        img(src="/static/img/weddingdanc.webp", alt="Wedding Dance")
+                    div.cardcontent 
+                        p Learn a stunning dance routine for your special day.
+            div.card
+                h4 Corporate Events
+                div.cardbox 
+                    div.cardimg 
+                        img(src="/static/img/corporateevent.webp", alt="Corporate Events")
+                    div.cardcontent 
+                        p Dance workshops and performances for corporate events.

@@ -1,0 +1,51 @@
+extends base.pug
+
+block scripts
+  script(src='/static/index.js')
+
+block style 
+    style
+      include ../static/style.css
+
+block content 
+    
+    header#introsection 
+        | WELCOME  TO DANCE ACADEMY
+    
+    header#missionsection
+        h3 Our Mission
+        div.maincard
+            div.card
+                h4 Dance for Everyone 
+                div.cardbox 
+                    div.cardimg 
+                        img(src="/static/img/d1.png", alt="img not found")
+                    div.cardcontent 
+                        p Encouraging all ages and skill levels to express themselves through movement
+            div.card
+                h4 Excellence in Training
+                div.cardbox 
+                    div.cardimg 
+                        img(src="/static/img/d4.jpg", alt="img not found")
+                    div.cardcontent 
+                        p Providing professional guidance to help dancers achieve their full potential
+            div.card
+                h4  Passion & Community 
+                div.cardbox 
+                    div.cardimg 
+                        img(src="/static/img/d3.png", alt="img not found")
+                    div.cardcontent 
+                        p Building a vibrant community where dance brings people together
+    header#sponsersection 
+        h3 Our Sponsers
+        div#imagesbox 
+            div.image
+                img(src="/static/img/logo1.png", alt="Image not found")
+            div.image
+                img(src="/static/img/logo2.png", alt="Image not found" )
+            div.image
+                img(src="/static/img/logo3.png", alt="Image not found" )
+            div.image
+                img(src="/static/img/logo4.png", alt="Image not found" )
+
+    

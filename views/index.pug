@@ -1,0 +1,63 @@
+//- index.pug
+doctype html
+html
+  head
+    title Apple Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar.top
+        ul 
+            div#logo 
+                img(src="/static/img/mainlogo.png", alt="IMg  not found")
+                
+            li #[a(href="/")  Home ]
+            li #[a(href="/") About]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Services]
+            li #[a(href="/") contact us]
+    header#introsection 
+        | WELCOME  TO DANCE ACADEMY
+    
+    header#missionsection
+        h3 Our Mission
+        div.maincard
+            div.card
+                h4 Dance for Everyone 
+                div.cardbox 
+                    div.cardimg 
+                        img(src="/static/img/d1.png", alt="img not found")
+                    div.cardcontent 
+                        p Encouraging all ages and skill levels to express themselves through movement
+            div.card
+                h4 Excellence in Training
+                div.cardbox 
+                    div.cardimg 
+                        img(src="/static/img/d4.jpg", alt="img not found")
+                    div.cardcontent 
+                        p Providing professional guidance to help dancers achieve their full potential
+            div.card
+                h4  Passion & Community 
+                div.cardbox 
+                    div.cardimg 
+                        img(src="/static/img/d3.png", alt="img not found")
+                    div.cardcontent 
+                        p Building a vibrant community where dance brings people together
+    header#sponsersection 
+        h3 Our Sponsers
+        div#imagesbox 
+            div.image
+                img(src="/static/img/logo1.png", alt="Image not found")
+            div.image
+                img(src="/static/img/logo2.png", alt="Image not found" )
+            div.image
+                img(src="/static/img/logo3.png", alt="Image not found" )
+            div.image
+                img(src="/static/img/logo4.png", alt="Image not found" )
+
+    
+    footer#footer 
+        | Copyright © 2024 AppleDanceAcademy.com
+
+    script
+      include ../static/index.js

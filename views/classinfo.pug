@@ -1,0 +1,56 @@
+extends base.pug
+block scripts
+  script(src='/static/index.js')
+block style 
+    style
+      include ../static/style.css
+      include ../static/otherstyle.css
+block content
+    header#introsection 
+        | Explore Our Dance Classes
+    
+    section#classes
+        h3 Our Classes
+        div.maincard
+            div.card
+                h4 Ballet
+                div.cardbox 
+                    div.cardimg 
+                        img(src="/static/img/ballet.webp", alt="Ballet Class")
+                    div.cardcontent 
+                        p A graceful dance form focusing on technique and expression.
+            div.card
+                h4 Hip-Hop
+                div.cardbox 
+                    div.cardimg 
+                        img(src="/static/img/hiphop.webp", alt="Hip-Hop Class")
+                    div.cardcontent 
+                        p Energetic and freestyle movements for modern dance lovers.
+            div.card
+                h4 Contemporary
+                div.cardbox 
+                    div.cardimg 
+                        img(src="/static/img/contemporary.webp", alt="Contemporary Class")
+                    div.cardcontent 
+                        p A fusion of classical and modern styles for emotional storytelling.
+
+    section#schedule
+        h3 Class Schedule
+        p Check out our weekly class schedules and enroll today!
+        table
+            tr
+                th Class
+                th Day
+                th Time
+            tr
+                td Ballet
+                td Monday, Wednesday
+                td 5:00 PM - 6:30 PM
+            tr
+                td Hip-Hop
+                td Tuesday, Thursday
+                td 6:00 PM - 7:30 PM
+            tr
+                td Contemporary
+                td Saturday
+                td 4:00 PM - 5:30 PM

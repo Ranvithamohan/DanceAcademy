@@ -1,0 +1,44 @@
+extends base.pug
+block scripts
+  script(src='/static/index.js')
+block style 
+    style
+      include ../static/style.css
+      include ../static/otherstyle.css
+block content
+    header#introsection 
+        | About Apple Dance Academy
+    
+    section#aboutus
+        h3 Who We Are
+        p Apple Dance Academy is a premier dance institute dedicated to nurturing talent and spreading the joy of dance. Our team of professional instructors ensures that each student learns and enjoys dancing in a supportive environment.
+        
+    section#ourstory
+        h3 Our Story
+        p Founded in 2010, Apple Dance Academy has grown into a vibrant community of passionate dancers. We offer various styles, from classical to contemporary, to suit all ages and skill levels.
+
+    section#whychooseus
+        h3 Why Choose Us?
+        div.maincard
+            div.card
+                h4 Expert Instructors
+                div.cardbox 
+                    div.cardimg 
+                        img(src="/static/img/insructor.webp", alt="Expert instructors")
+                    div.cardcontent 
+                        p Our skilled teachers bring years of experience and dedication.
+            div.card
+                h4 Fun & Engaging Classes
+                div.cardbox 
+                    div.cardimg 
+                        img(src="/static/img/funclass.webp", alt="Fun classes")
+                    div.cardcontent 
+                        p We make learning dance enjoyable and creative.
+            div.card
+                h4 Community & Events
+                div.cardbox 
+                    div.cardimg 
+                        img(src="/static/img/events.webp", alt="Community events")
+                    div.cardcontent 
+                        p We host dance performances and events to showcase talent.
+
