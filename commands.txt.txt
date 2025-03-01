@@ -1,0 +1,11 @@
+touch .gitignore
+git config --global user.name your_name
+git config --global user.email your_email@example.com
+git init
+git add .
+git commit -m "this is my initial commit"
+git status 
+ssh-keygen -t ed25519 -C "your_email@example.com"
+tail <path to id_rsa.pub>
+git remote add origin <ssh url>
+git push origin master
